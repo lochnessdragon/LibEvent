@@ -6,7 +6,7 @@ Simply include the header `LibEvent.h` in your project.
 
 Example:
 
-```
+```cpp
 #include <LibEvent.h>
 #include <iostream>
 
