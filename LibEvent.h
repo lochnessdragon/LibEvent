@@ -3,7 +3,7 @@
 #include <vector>
 #include <functional>
 
-namespace libEvent {
+namespace LibEvent {
     template<typename T>
     class EventDispatcher {
     private:
