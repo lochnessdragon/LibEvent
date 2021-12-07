@@ -1,0 +1,2 @@
+language = "cpp"
+run = "cd tests && mkdir -p build && cd build && cmake ../ && cmake --build . && ./LibEventTests"

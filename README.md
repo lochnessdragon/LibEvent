@@ -12,7 +12,7 @@ Example:
 
 struct ConsoleInputEventData {
   std::string input;
-}
+};
 
 bool onConsoleEvent(const ConsoleInputEventData& data) {
   std::cout << "You inputed: " << data.input << std::endl;
@@ -25,9 +25,10 @@ int main() {
   
   ConsoleInputEventData eventData;
   
+  std::cout << "Enter a string: ";
   std::getline(std::cin, eventData.input);
   
-  consoleEvent.publish(eventData);
+  consoleEvent.dispatch(eventData);
   
   return 0;
 }
